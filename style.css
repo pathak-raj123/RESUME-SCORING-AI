@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-container h1 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+#toggleDarkMode {
+  font-size: 0.9rem;
+  background-color: #ffffff20;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggleDarkMode:hover {
+  background-color: #ffffff40;
+}
+
+.upload-section,
+.result-section {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"],
+select,
+button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#analysisOutput,
+#scoreOutput {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007acc;
+}
+
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .upload-section,
+.dark-mode .result-section {
+  background: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode button {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+.dark-mode button {
+  background-color: #444;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
